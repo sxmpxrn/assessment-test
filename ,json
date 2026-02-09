@@ -1,0 +1,62 @@
+[
+  {
+    "table_name": "academic_sessions",
+    "columns": "{id,academic_year,semester}"
+  },
+  {
+    "table_name": "admins",
+    "columns": "{id,user_id,admin_id,admin_name,citizen_id}"
+  },
+  {
+    "table_name": "advisor_status",
+    "columns": "{id,student_id,teacher_id,room_id,academic_session_id,status,evaluated_at}"
+  },
+  {
+    "table_name": "assessment_answer",
+    "columns": "{id,student_id,teacher_id,academic_session_id,question_id,score_value,text_value}"
+  },
+  {
+    "table_name": "assessment_around",
+    "columns": "{id,section,description,around_id}"
+  },
+  {
+    "table_name": "assessment_question",
+    "columns": "{id,type,question_text,max_score,around,start_date,end_date,around_id,min_score}"
+  },
+  {
+    "table_name": "faculties",
+    "columns": "{id,faculty_name}"
+  },
+  {
+    "table_name": "majors",
+    "columns": "{id,major_name,faculty_id}"
+  },
+  {
+    "table_name": "role",
+    "columns": "{id,user_type}"
+  },
+  {
+    "table_name": "rooms",
+    "columns": "{id,room_code,major_id}"
+  },
+  {
+    "table_name": "student_rooms",
+    "columns": "{id,student_id,room_id,academic_session_id}"
+  },
+  {
+    "table_name": "students",
+    "columns": "{id,user_id,student_id,student_name,citizen_id}"
+  },
+  {
+    "table_name": "teacher_rooms",
+    "columns": "{id,teacher_id,room_id,academic_session_id}"
+  },
+  {
+    "table_name": "teachers",
+    "columns": "{id,user_id,teacher_id,teacher_name,citizen_id}"
+  },
+  {
+    "table_name": "user_sessions",
+    "columns": "{id,session_token,user_id,expires_at}"
+  }
+]
